@@ -1,0 +1,132 @@
+body {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #242424;
+    background-color: #FEAFC3;
+}
+
+.navigation-link {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: #2D3440;
+    background-color: #FEAFC3;
+    text-decoration: none;
+}
+
+.ice-cream-title {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 46px;
+}
+
+.ice-cream-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.ice-cream-button {
+    color: #242424;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.gift-title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+}
+
+.gift-subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.gift-button {
+    color: #242424;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.popular-title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+}
+
+.popular-subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.about-us-title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+}
+
+.blog {
+    font-size: 16px;
+    line-height: 20px;
+    background-image: url("/images/bg-blog.jpg");
+    background-color: #ffffff;
+    height: 400px;
+    width: 400px;
+}
+
+.blog-subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.delivery-title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 46px;
+}
+
+.delivery-form {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2D3440;
+}
+
+.feedback-bold {
+    color: #2D3440;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.feedback-button {
+    text-decoration: none;
+}
+
+.provider-list {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.provider-item-blod {
+    font-weight: 700;
+}
+
+.copyright-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
