@@ -108,7 +108,7 @@
                         <img src="images/catalog/ice-cream-1.jpg" width="168" height="168" alt="популярная малина">
                         <h3 class="products-subtitle">Малинка</h3>
                         <p class="products-text">Сливочное мороженое с малиновым джемом</p>
-                        <p class="products-price"><b>310 ₽/кг</b></p>
+                        <p class="products-price">310 ₽/кг</p>
                         <a class="products-button" href="#"><span class="visually-hidden">Добавить</span></a>
                     </li>
                     <li class="products-item popular-item">
@@ -116,7 +116,7 @@
                             alt="Фисташковый пломбир с кусочками шоколада">
                         <h3 class="products-subtitle">Фисташка</h3>
                         <p class="products-text">Фисташковый пломбир с кусочками шоколада</p>
-                        <p class="products-price"><b>340 ₽/кг</b></p>
+                        <p class="products-price">340 ₽/кг</p>
                         <a class="products-button" href="#"><span class="visually-hidden">Добавить</span></a>
                     </li>
                     <li class="products-item popular-item">
@@ -124,7 +124,7 @@
                             alt="Крем-брюле с черничным джемом">
                         <h3 class="products-subtitle">Черника</h3>
                         <p class="products-text">Крем-брюле с черничным джемом</p>
-                        <p class="products-price"><b>330 ₽/кг</b></class="products-price">
+                        <p class="products-price">330 ₽/кг</p>
                         <a class="products-button" href="#"><span class="visually-hidden">Добавить</span></a>
                     </li>
                     <li class="products-item popular-item">
@@ -132,7 +132,7 @@
                             alt="Ванильный пломбирсо сладкой посыпкой">
                         <h3 class="products-subtitle">Бабл-гам</h3>
                         <p class="products-text">Ванильный пломбирсо сладкой посыпкой</p>
-                        <p class="products-price"><b>320 ₽/кг</b></p>
+                        <p class="products-price">320 ₽/кг</p>
                         <a class="products-button" href="#"><span class="visually-hidden">Добавить</span></a>
                     </li>
                 </ul>
@@ -147,13 +147,13 @@
                         <li class="about-us-item">
                             Всё наше мороженое изготавливается на собственном производстве с использованием
                             современного оборудования и проверенных временем технологий.</li>
+                            <li class="about-us-item">
+                                Закупка ингредиентов производится только у проверенных фермерских хозяйств, с
+                                которыми нас связывает долговременное сотрудничество.</li>
                         <li class="about-us-item">
                             Для приготовления мороженого используются сливки и молоко высочайшего качества.
                             Все ингредиенты и добавки произведены из натурального сырья.</li>
 
-                        <li class="about-us-item">
-                            Закупка ингредиентов производится только у проверенных фермерских хозяйств, с
-                            которыми нас связывает долговременное сотрудничество.</li>
                         <li class="about-us-item">
                             Доставка нашего мороженого осуществляется в специальном термопаке, который не
                             даёт мороженому растаять и позволяет сохранить превосходный вкус.
@@ -178,7 +178,7 @@
                         Честно =)</p>
                     <form class="mail-form" action="https://echo.htmlacademy.ru">
                         <label class="mail-label">
-                            <input type="text" name="email" placeholder="gavgav@gmail.com">
+                            <input class="mail-input" type="text" name="email" placeholder="gavgav@gmail.com">
                         </label>
                         <button class="mail-button">Отправить</button>
                     </form>
@@ -194,23 +194,23 @@
                     </p>
                 </div>
                 <div class="delivery-container">
-                    <span>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить
+                    <p class="delivery-form-text">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить
                         заказ.
-                    </span>
+                    </p>
 
                     <form class="delivery-form" action="https://echo.htmlacademy.ru">
-                        <label class="delivery-label">
-                            Дата
-                            <input type="date" name="date-delivery">
-                        </label>
-                        <label class="delivery-label">
-                            Номер
-                            <input type="text" name="number-delivery" placeholder="+79992253329">
-                        </label>
-                        <label class="delivery-label">
-                            Адрес
-                            <input type="text" name="adress-delivery" placeholder="Ул.Большакова Д.33 кв.66">
-                        </label>
+                        <p class="delivery-group"><label class="delivery-label">
+                                Дата
+                                <input class="delivery-input"  type="text" name="date-delivery" placeholder="01.04.2020">
+                            </label></p>
+                        <p class="delivery-group"><label class="delivery-label">
+                                Номер
+                                <input class="delivery-input" type="text" name="number-delivery" placeholder="+79992253329">
+                            </label></p>
+                        <p class="delivery-group delivery-address"><label class="delivery-label delivery-address">
+                                Адрес
+                                <input class="delivery-input" type="text" name="address-delivery" placeholder="Ул.Большакова Д.33 кв.66">
+                            </label></p>
                         <button class="delivery-button">Отправить</button>
                     </form>
                 </div>
@@ -220,14 +220,18 @@
                 <h2 class="visually-hidden">Обратная Связь</h2>
                 <div class="feedback-container">
                     <ul class="feedback-list">
-                        <li class="feedback-item">Адрес главного офиса и офлайн-магазина:</li>
-                        <li class="feedback-item feedback-bold">наб. реки Карповки, 5 лит П, Санкт-Петербург</li>
-                        <li class="feedback-item">Для заказов по телефону:</li>
-                        <li class="feedback-item feedback-bold"><a class="feedback-button" href="+78128121212">+7 (812)
-                                812-12-12</a></li>
-                        <li class="feedback-item">(с 10 до 20 ежедневно)</li>
-                        <li class="feedback-item"><a class="feedback-button" href="#">Форма обратной связи</a></li>
+                        <li class="feedback-item">
+                            <p class="feedback-text">Адрес главного офиса <br>и офлайн-магазина:</p>
+                            <p class="feedback-address">наб. реки Карповки,<br> 5 лит П, Санкт-Петербург</p>
+                        </li>
+                        <li class="feedback-item">
+                            <p class="feedback-text">Для заказов по телефону:</p>
+                            <p class="feedback-number"><a class="feedback-button-number" href="+78128121212">+7 (812)
+                                    812-12-12</a></p>
+                            <p class="feedback-time">(с 10 до 20 ежедневно)</p>
+                        </li>
                     </ul>
+                    <p class="feedback-link"><a class="feedback-button" href="#">Форма обратной связи</a></p>
                 </div>
             </section>
         </div>
@@ -252,10 +256,10 @@
             </ul>
 
             <ul class="provider-list">
-                <li class="provider-item provider-item-bold"><a href="#">Для поставщиков</a></li>
-                <li class="provider-item"><a href="#">О производстве</a></li>
-                <li class="provider-item"><a href="#">Наши документы</a></li>
-                <li class="provider-item"><a href="#">Экологические стандарыты</a></li>
+                <li class="provider-item provider-item-bold"><a class="provider-item-link" href="#">Для поставщиков</a></li>
+                <li class="provider-item"><a class="provider-item-link" href="#">О производстве</a></li>
+                <li class="provider-item"><a class="provider-item-link" href="#">Наши документы</a></li>
+                <li class="provider-item"><a class="provider-item-link" href="#">Экологические стандарыты</a></li>
             </ul>
 
 

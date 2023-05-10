@@ -39,7 +39,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    text-align: center;
     width: 400px;
     margin: 0;
     padding: 0;
@@ -123,13 +122,13 @@ body {
     font-size: 24px;
     line-height: 30px;
     margin: 0px;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 .gift-text {
     width: 320px;
     margin: 0px;
-    padding-bottom: 32px;
+    margin-bottom: 32px;
 }
 
 .gift-container {
@@ -153,6 +152,11 @@ body {
     font-size: 16px;
     line-height: 20px;
     text-decoration: none;
+    padding: 12px 32px;
+    background: #FCFCFC;
+    border: 4px solid rgba(252, 252, 252, 0.4);
+    box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+    border-radius: 26px;
 }
 
 .popular {
@@ -170,7 +174,7 @@ body {
 
 .products-list {
     display: flex;
-    justify-content: space-between;
+    gap: 40px 30px;
     flex-wrap: wrap;
     padding: 0px;
     margin: 0px;
@@ -181,13 +185,10 @@ body {
 .products-item {
     width: 270px;
     background-color: white;
-    margin-bottom: 40px;
     border-radius: 16px;
 }
 
-.popular-item {
-    margin-bottom: 0px;
-}
+
 
 .products-subtitle {
     font-weight: 700;
@@ -199,8 +200,8 @@ body {
 }
 
 .products-text {
+    margin: 0 40px;
     text-align: center;
-    margin: 0;
     margin-bottom: 20px;
 }
 
@@ -208,10 +209,12 @@ body {
     margin: 0;
     margin-left: 40px;
     margin-bottom: 28px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
 }
 
 .about-us {
-    width: 1170px;
     background-image: url(../images/wafer-bg.jpg);
     background-color: #fcfcfc;
     border-radius: 16px;
@@ -238,6 +241,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 0px;
+    margin: 0px;
     list-style-type: none;
 }
 
@@ -286,6 +290,20 @@ body {
     padding-bottom: 42px;
 }
 
+.mail-input {
+    width: 332px;
+    height: 48px;
+}
+
+.mail-button {
+    padding: 12px 32px;
+    background: #FF2F64;
+    border: 4px solid rgba(255, 47, 100, 0.3);
+    box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+    border-radius: 26px;
+color: #fcfcfc;
+}
+
 .delivery {
     display: flex;
     justify-content: space-between;
@@ -293,21 +311,17 @@ body {
     background-image: url(../images/bg-delivery.jpg);
     background-size: 120%;
     border-radius: 16px;
+    min-height: 534px;
 
 }
 
 .delivery-container-text {
     width: 372px;
-}
-
-.delivery-container-text {
     margin-top: 167px;
     margin-left: 100px;
-    margin-bottom: 163px;
 }
 
 .delivery-container {
-    width: 500px;
     margin: 64px 64px 64px 0px;
     background-color: #fcfcfc;
     border-radius: 16px;
@@ -319,6 +333,27 @@ body {
     font-size: 32px;
     line-height: 46px;
     margin: 0;
+    margin-bottom: 24px;
+}
+
+.delivery-text {
+    margin: 0px;
+}
+
+.delivery-form-text {
+    margin: 0;
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 22px;
+    width: 380px;
+
+}
+
+.delivery-group {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .delivery-form {
@@ -326,6 +361,32 @@ body {
     font-size: 16px;
     line-height: 20px;
     color: #2D3440;
+    display: grid;
+    grid-template-columns: 117px 287px;
+    gap: 20px 12px;
+}
+
+.delivery-input {
+    width: 100%;
+    height: 48px;
+}
+
+.delivery-address {
+    grid-column: 1 / -1;
+}
+
+
+.delivery-button {
+    color: #fcfcfc;
+    align-items: center;
+    padding: 12px 32px;
+    background: #FF2F64;
+    border: 4px solid rgba(255, 47, 100, 0.3);
+    box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+    border-radius: 26px;
+    grid-column: 1/-1;
+    justify-self: center;
+    margin-top: 12px;
 }
 
 .feedback {
@@ -335,32 +396,67 @@ body {
     border-radius: 16px;
 }
 
-.feedback-list {
-    list-style-type: none;
-    padding: 40px;
-    margin: 0;
+.feedback-container {
     background-color: #fcfcfc;
     border-radius: 16px;
+    min-height: 343px;
 }
 
-.feedback-item {
-    padding-bottom: 12px;
+.feedback-list {
+    margin: 0;
+    list-style-type: none;
+    padding: 40px 40px 32px 40px;
 }
 
-.feedback-item:nth-child(4) {
-    padding-bottom: 0;
+.feedback-text {
+    margin: 0;
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
 }
 
-.feedback-bold {
-    color: #2D3440;
+.feedback-address {
+    margin: 0;
+    margin-bottom: 24px;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-    padding-bottom: 24px;
+    color: #2D3440;
+}
+
+.feedback-number {
+    margin: 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.feedback-time {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.feedback-button-number {
+    text-decoration: none;
+    color: #2D3440;
+}
+
+.feedback-link {
+    margin: 0px 0px 40px 40px;
 }
 
 .feedback-button {
+    color: #fcfcfc;
     text-decoration: none;
+    align-items: center;
+    padding: 12px 32px;
+    background: #FF2F64;
+    border: 4px solid rgba(255, 47, 100, 0.3);
+    box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+    border-radius: 26px;
 }
 
 .provider-list {
@@ -370,31 +466,46 @@ body {
 
 }
 
-.provider-item-bold {
-    font-weight: 700;
-}
-
-
 
 .footer-page-container {
     display: flex;
     justify-content: space-between;
     width: 1170px;
     margin: 0 auto;
-
+    margin-top: 48px;
+    margin-bottom: 48px;
 }
 
 .social-group {
     width: 105px;
+    display: flex;
 }
 
 .provider-list {
     width: 356px;
     list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 356px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 48px;
+    gap: 8px 24px;
+}
+
+.provider-item-link {
+    text-decoration: none;
+    color: #2D3440;
+}
+
+.provider-item-bold {
+    font-weight: 700;
 }
 
 .copyright {
-    width: 153px;
+    width: 193px;
+    margin-right: 14px;
 }
 
 .copyright-text {
@@ -432,16 +543,31 @@ body {
     margin-top: 16px;
 }
 
+.products-next {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 42px 0px;
+}
 
 .pagination {
-    display: flex;
     list-style-type: none;
-    justify-content: flex-end;
     margin: 0;
-
+    display: flex;
 }
 
-.products-next {
-    margin-bottom: 40px;
+.pagination-item {
+    margin-right: 16px;
 }
 
+.products-next-button {
+    margin: auto;
+    padding: 12px 32px;
+    background: #FCFCFC;
+    border: 4px solid rgba(252, 252, 252, 0.4);
+    box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+    border-radius: 26px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
